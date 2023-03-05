@@ -1,0 +1,6 @@
+@use "variables/colors" as v;
+@use "./normalize.scss";
+
+* {
+  border: 1px solid v.$blue100;
+}
