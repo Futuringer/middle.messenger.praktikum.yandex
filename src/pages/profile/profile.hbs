@@ -1,0 +1,41 @@
+---
+  form:
+    formName: 'profileForm'
+    formText: 'Profile'
+    singleColumn: false
+    inputs: 
+      - {label: "Login", name: 'login',type: 'text', placeholder: "Enter your login", isRequired: true}
+      - {label: "Email Address", name: 'emailAddress',type: 'password', placeholder: "Enter your Email Address", isRequired: true}
+      - {label: "First Name", name: 'firstName',type: 'password', placeholder: "Enter your First Name", isRequired: true}
+      - {label: "Last Name", name: 'lastName',type: 'text', placeholder: "Enter your Last Name", isRequired: true}
+      - {label: "Phone", name: 'login',type: 'phone', placeholder: "Enter your Phone", isRequired: true}
+      - {label: "Password", name: 'password',type: 'password', placeholder: "Enter your Password", isRequired: true}
+    buttons: 
+      - {type: "button", text: 'Change Info', isActive: false}
+      - {type: "button", text: 'Change Password', isActive: false}
+      - {type: "submit", text: 'Cancel', isActive: true}
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+{{> utils/head }}
+
+<body>
+  <main class="profile__main">
+    <div class="profile__formPart">
+      <div class="profile__form-container">
+        {{>form/form form}}
+      </div>
+    </div>
+
+    <div class="profile__avatarPart">
+      <div class="splitScreen__logo">
+        <img src="./../../../static/imgs/avatarPlaceholder.png" alt="logo" class="profile__avatarPart__avatar">
+        <p class="profile__avatar">MESSENJUICE</p>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>

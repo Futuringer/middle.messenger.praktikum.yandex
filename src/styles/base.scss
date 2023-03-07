@@ -1,6 +1,7 @@
 @use "variables/colors" as v;
 @use "./normalize.scss";
 
-* {
-  border: 1px solid v.$blue100;
+body {
+  font-family: "Manrope", sans-serif;
+  height: 100vh;
 }

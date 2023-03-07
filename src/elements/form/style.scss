@@ -1,0 +1,57 @@
+@use "./../../styles/variables/colors.scss" as v;
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    align-self: flex-start;
+    margin: 0 0 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+  }
+
+  &__inputs-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &_two-columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 40px;
+      row-gap: 10px;
+
+      & + .form__buttons-container {
+        width: 500px;
+      }
+    }
+  }
+
+  &__description {
+    margin: 20px 0 0 0;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: v.$neutralMediumDark;
+  }
+
+  &__description-link {
+    text-decoration: none;
+    color: v.$activeLight;
+
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+
+  &__buttons-container {
+    width: 100%;
+    margin-top: 40px;
+    display: grid;
+    gap: 10px;
+  }
+}
