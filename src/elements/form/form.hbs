@@ -1,0 +1,31 @@
+<form class="form" name="{{this.formName}}">
+  <h1 class="form__header">{{this.formText}}</h1>
+
+  {{#if this.singleColumn}}
+  <div class="form__inputs-container">
+    {{#each inputs}}
+      {{>input/input this}}
+    {{/each}}
+  </div>
+
+  {{else}}
+    <div class="form__inputs-container form__inputs-container_two-columns">
+    {{#each inputs}}
+      {{>input/input this}}
+    {{/each}}
+  </div>
+  {{/if}}
+  
+  <div class="form__buttons-container">
+    {{#each buttons}}
+      {{>button/button this}}
+    {{/each}}
+  </div>
+
+  {{#if this.descriptionText}}
+    <p class="form__description">
+      {{this.descriptionText}}
+      <a class="form__description-link" href={{this.descriptionLink}}>{{this.descriptionLinkText}}</a>
+    </p>
+  {{/if}}
+</form>

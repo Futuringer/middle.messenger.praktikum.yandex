@@ -1,0 +1,20 @@
+---
+  form:
+    formName: 'loginForm'
+    formText: 'Sign in'
+    descriptionText: 'No account?'
+    descriptionLinkText: 'Create one'
+    descriptionLink: './registration'
+    singleColumn: true
+    inputs: 
+      - {label: "Login", name: 'Login',type: 'text', placeholder: "Enter your login", isRequired: true}
+      - {label: "Password", name: 'Password',type: 'password', placeholder: "Enter your password", isRequired: true}
+    buttons: 
+      - {type: "submit", text: 'Sign up', isActive: true}
+---
+
+{{!< splitScreen/splitScreenLayout }}
+
+<div class="login-form-container">
+    {{>form/form form}}
+</div>

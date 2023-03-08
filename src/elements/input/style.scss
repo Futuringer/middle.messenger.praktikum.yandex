@@ -1,0 +1,21 @@
+@use "./../../styles/variables/colors.scss" as v;
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  color: black;
+
+  &__label {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__field {
+    border-radius: 10px;
+    color: v.$neutralLigth;
+    border: 1px solid v.$neutralLigth;
+    outline: none;
+    padding: 10px;
+  }
+}

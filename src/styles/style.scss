@@ -1,0 +1,12 @@
+@use "./base.scss";
+@use "./../layouts/splitScreen/style.scss" as splitScreenStyle;
+@use "./../layouts/centeredContent/style.scss" as centeredContentStyle;
+
+@use "./../elements/input/style.scss" as inputStyle;
+@use "./../elements/button/style.scss" as buttonStyle;
+@use "./../elements/form/style.scss" as formStyle;
+@use "./../elements/errorBlock/style.scss" as errorBlockStyle;
+
+@use "./../pages/login/style.scss" as loginPageStyle;
+@use "./../pages/registration/style.scss" as registrationPageStyle;
+@use "./../pages/profile/style.scss" as profilePageStyle;

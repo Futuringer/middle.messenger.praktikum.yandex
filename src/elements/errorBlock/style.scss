@@ -1,0 +1,23 @@
+@use "./../../styles/variables/colors.scss" as v;
+
+.error {
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    color: v.$neutralDark;
+    margin: 0 0 20px 0;
+    font-size: 150px;
+    line-height: 160px;
+  }
+
+  &__text {
+    color: black;
+    margin: 0 0 40px 0;
+    font-size: 25px;
+    line-height: 30px;
+  }
+}
