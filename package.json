@@ -4,7 +4,7 @@
   "description": "---",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "parcel index.hbs --no-cache && parcel watch ./*",
+    "dev": "parcel index.html --no-cache && parcel watch ./*",
     "build": "parcel build index.hbs",
     "serve": "node server.js"
   },
@@ -25,6 +25,7 @@
     "parcel": "^2.8.3"
   },
   "dependencies": {
+    "@parcel/transformer-inline-string": "^2.8.3",
     "handlebars": "^4.7.7",
     "sass": "^1.58.3"
   }

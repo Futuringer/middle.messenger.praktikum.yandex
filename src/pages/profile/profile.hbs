@@ -16,26 +16,17 @@
       - {type: "submit", text: 'Cancel', isActive: true}
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-
-{{> utils/head }}
-
-<body>
-  <main class="profile__main">
-    <div class="profile__formPart">
-      <div class="profile__form-container">
-        {{>form/form form}}
-      </div>
+<main class="profile__main">
+  <div class="profile__formPart">
+    <div class="profile__form-container">
+      {{>form/form form}}
     </div>
+  </div>
 
-    <div class="profile__avatarPart">
-      <div class="splitScreen__logo">
-        <img src="./../../../static/imgs/avatarPlaceholder.png" alt="logo" class="profile__avatarPart__avatar">
-        <p class="profile__avatar">MESSENJUICE</p>
-      </div>
+  <div class="profile__avatarPart">
+    <div class="splitScreen__logo">
+      <img src="./../../../static/imgs/avatarPlaceholder.png" alt="logo" class="profile__avatarPart__avatar">
+      <p class="profile__avatar">MESSENJUICE</p>
     </div>
-  </main>
-</body>
-
-</html>
+  </div>
+</main>

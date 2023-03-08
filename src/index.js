@@ -1,6 +1,30 @@
-import { renderLogin } from "./pages/login/login";
+import {
+  renderLogin,
+  renderProfile,
+  renderRegistration,
+  renderClientError,
+  renderServerError,
+} from "./pages";
 
-const container = document.getElementById("root_body");
+const container = document.getElementById("root");
 const path = window.location.pathname;
 
-container.innerHTML = renderLogin();
+switch (path) {
+  case "/":
+    window.location.href = "/login";
+  case "/login":
+    container.innerHTML = renderLogin();
+    break;
+  case "/registration":
+    container.innerHTML = renderRegistration();
+    break;
+  case "/profile":
+    container.innerHTML = renderProfile();
+    break;
+  case "/500":
+    container.innerHTML = renderServerError();
+    break;
+  default:
+    container.innerHTML = renderClientError();
+    break;
+}
