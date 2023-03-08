@@ -10,12 +10,9 @@ import {
 const container = document.getElementById("root");
 const path = window.location.pathname;
 
-console.log("window", window);
-console.log("path", path);
-
 switch (path) {
-  // case "/":
-  //   window.location.href = "/login";
+  case "/":
+    window.location.href = "/login";
   case "/login":
     container.innerHTML = renderLogin();
     break;
