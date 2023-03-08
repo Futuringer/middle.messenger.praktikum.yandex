@@ -3,6 +3,7 @@ import { renderProfile } from "./profile";
 import { renderRegistration } from "./registration";
 import { renderClientError } from "./404";
 import { renderServerError } from "./500";
+import { renderChat } from "./chat";
 
 export {
   renderLogin,
@@ -10,4 +11,5 @@ export {
   renderRegistration,
   renderClientError,
   renderServerError,
+  renderChat,
 };

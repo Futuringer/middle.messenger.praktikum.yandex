@@ -4,6 +4,7 @@ import {
   renderRegistration,
   renderClientError,
   renderServerError,
+  renderChat,
 } from "./pages";
 
 const container = document.getElementById("root");
@@ -23,6 +24,9 @@ switch (path) {
     break;
   case "/500":
     container.innerHTML = renderServerError();
+    break;
+  case "/chat":
+    container.innerHTML = renderChat();
     break;
   default:
     container.innerHTML = renderClientError();
