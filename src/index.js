@@ -11,8 +11,8 @@ const container = document.getElementById("root");
 const path = window.location.pathname;
 
 switch (path) {
-  // case "/":
-  //   window.location.href = "/login";
+  case "/":
+    window.location.href = "/login";
   case "/sign-in":
     container.innerHTML = renderLogin();
     break;
