@@ -11,12 +11,12 @@ const container = document.getElementById("root");
 const path = window.location.pathname;
 
 switch (path) {
-  case "/":
-    window.location.href = "/login";
-  case "/login":
+  // case "/":
+  //   window.location.href = "/login";
+  case "/sign-in":
     container.innerHTML = renderLogin();
     break;
-  case "/registration":
+  case "/sign-up":
     container.innerHTML = renderRegistration();
     break;
   case "/profile":
