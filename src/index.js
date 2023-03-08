@@ -12,7 +12,7 @@ const path = window.location.pathname;
 
 switch (path) {
   case "/":
-    window.location.href = "/login";
+    window.location.href = "/sign-in";
   case "/sign-in":
     container.innerHTML = renderLogin();
     break;
